@@ -1,0 +1,78 @@
+body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: $default;
+    overflow-x: hidden;
+    min-width: 300px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.container-fluid {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+        margin: 0 15px;
+    }
+    li.slick-active {
+        button {
+            background-color: #ffef35;
+        }
+    }
+    button {
+        background-color: &title;
+        border: none;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        padding: 0;
+        font-size: 0;
+    }
+}
+
+.info-email {
+    font-weight: 600;
+    font-size: 400;
+    color: $title;
+    margin-bottom: 22px;
+    padding-left: 30px;
+    display: inline-block;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../images/icon/envelope.svg);
+        left: 0;
+        top: 8px;
+        width: 16px;
+        height: 12px;
+    }
+}
