@@ -8,3 +8,6 @@ Repo of website frontend.
 
 # install:
 npm i
+
+# Run in development mode:
+gulp
